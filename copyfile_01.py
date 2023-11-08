@@ -1,7 +1,9 @@
 import shutil
 import pandas as pd 
+import dec_file
 
 #str匯入資料預處理
+filename = dec_file.selcet_doc()
 df = pd.read_csv(filename, index_col=0)
 final_list = df.tolist()
 

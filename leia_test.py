@@ -1,8 +1,12 @@
-# test2.py 
+'''模組與套件說明
+模組名稱就是一個檔案名稱
+套件名稱是資料夾名稱
+*from 模組名稱 import 方法名稱
+*from 第2層資料夾名稱 import 模組名稱
+'''
 
+#顯示目前主程式搜尋模組路徑
 import sys
-print('Program arguments:', sys.argv,'/n',type(sys.argv))
-
-for a in sys.argv:
-    print('TEST', a)
+for place in sys.path: 
+    print(place)
 
